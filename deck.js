@@ -10,13 +10,15 @@ export default class Deck {
         this.cards.length
     }
 
-    shuffle(){
-      for (let i = this.numberOfCards - 1; i > 0; i--){
-        const newPosition = Math.floor(Math.random() * (i + 1))
-        const oldPosition = this.cards[newPosition]
-        this.cards[newPosition] = this.card[i]
-        this.card[i] = oldPosition
-      }  
+    shuffle() {
+
+        this.cards.sort((a,b) => Math.random() - 0.5)
+    //   for (let i = this.numberOfCards - 1; i > 0; i--) {
+    //     const newPosition = Math.floor(Math.random() * (i + 1))
+    //     const oldPosition = this.cards[newPosition]
+    //     this.cards[newPosition] = this.cards[i]
+    //     this.cards[i] = oldPosition
+    //   }  
     }
 }
 
