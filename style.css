@@ -6,4 +6,25 @@ body{
 .dealer-hand img{
     height: 10rem;
     width: 7.5rem;
+    margin: 0.1rem;
+}
+
+.player-hand img{
+    height: 10rem;
+    width: 7.5rem;
+    margin: 0.1rem;
+}
+
+#hit{
+    font-family: 'Courier New', Courier, monospace;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.25rem;
+}
+
+#stay{
+    font-family: 'Courier New', Courier, monospace;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.25rem;
 }
