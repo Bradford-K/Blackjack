@@ -3,13 +3,13 @@ body{
     text-align: center;
 }
 
-.dealer-hand img{
+#dealer-hand img{
     height: 10rem;
     width: 7.5rem;
     margin: 0.1rem;
 }
 
-.player-hand img{
+#player-hand img{
     height: 10rem;
     width: 7.5rem;
     margin: 0.1rem;
