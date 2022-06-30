@@ -136,14 +136,17 @@ function stay(){
         message = "You Lose! YOU'RE A LOSER!!! YOUR MOTHER NEVER LOVED YOU!"
     }else if (dealerSum > 21){
         message = "You Win!!!"
+    }else if (playerSum && dealerSum > 21){
+        message = "House Rules, Dealer Wins!!!"
     }else if (playerSum == dealerSum ){
         message = "You Tie..."
     }else if (playerSum > dealerSum) {
         message = "You Win!!!"
     }else if (playerSum < dealerSum){
         message = "You Lose! YOU'RE A LOSER!!! YOUR MOTHER NEVER LOVED YOU!"
-    }else if (playerSum && dealerSum > 21){
-        message = "You Lose! YOU'RE A LOSER!!! YOUR MOTHER NEVER LOVED YOU!"
+    
     }
+    document.getElementById("dealer-sum").innerText = dealerSum
+    document.getElementById("player-sum").innerText = playerSum
     document.getElementById("results").innerText = message;
 }
