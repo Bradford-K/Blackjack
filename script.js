@@ -133,7 +133,7 @@ function stay(){
 
     let message = "";
     if (playerSum > 21) {
-        message = "You Lose! YOU'RE A LOSER!!! YOUR MOTHER NEVER LOVED YOU!"
+        message = "You Lose! YOU'RE A LOSER!!!"
     }else if (dealerSum > 21){
         message = "You Win!!!"
     }else if (playerSum && dealerSum > 21){
@@ -143,7 +143,7 @@ function stay(){
     }else if (playerSum > dealerSum) {
         message = "You Win!!!"
     }else if (playerSum < dealerSum){
-        message = "You Lose! YOU'RE A LOSER!!! YOUR MOTHER NEVER LOVED YOU!"
+        message = "You Lose! YOU'RE A LOSER!!!"
     
     }
     document.getElementById("dealer-sum").innerText = dealerSum
